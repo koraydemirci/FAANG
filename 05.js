@@ -24,6 +24,10 @@ const lengthOfLongestSubstring1 = function (s) {
 };
 
 const lengthOfLongestSubstring2 = function (s) {
+  if (s.length <= 1) {
+    return s.length;
+  }
+
   let left = 0;
   let right = 0;
   const hash = {};
